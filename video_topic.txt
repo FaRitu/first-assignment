@@ -1,0 +1,96 @@
+Record a max 5-minute video explaining the following basic HTML & CSS questions in your own words:
+
+What is the difference between a <div> and a <span>? When would you use each?
+What is the CSS Box Model? Explain content, padding, border, and margin.
+What is the difference between a CSS class and an id? When should you use one over the other?
+What is Flexbox, and what's the difference between justify-content and align-items?
+What is the difference between position: relative, absolute, and fixed in CSS?
+Speak naturally, in your own words — no need to read from a script.
+
+Screen recording with your face on camera (or voice-over on slides/code) is fine, whichever you're comfortable with.
+Upload the video link (YouTube/Google Drive) along with your submission.
+
+
+1.What is the difference between a <div> and a <span>? When would you use each?
+
+| `<div>`                                 | `<span>`                                                    |
+| --------------------------------------- | ----------------------------------------------------------- |
+| Block-level element                     | Inline element                                              |
+| Starts on a new line                    | Stays in the same line                                      |
+| Takes the full available width          | Takes only the width of its content                         |
+| Used to group large sections of content | Used to style or group small pieces of text                 |
+| Can contain block and inline elements   | Should generally contain only text or other inline elements |
+
+<div class="card">
+    <h2>John Doe</h2>
+    <p>Web Developer</p>     output:John Doe 
+</div>                              Web Developer
+
+
+<span>First</span>     output:John DoeWeb Developer
+<span>Second</span>
+
+
+2.What is the CSS Box Model? Explain content, padding, border, and margin.
+=The CSS Box Model is the way every HTML element is represented as a rectangular box. It determines how much space an element occupies on a webpage.
++--------------------------------------+
+|               Margin                 |
+|  +--------------------------------+  |
+|  |            Border              |  |
+|  |  +--------------------------+  |  |
+|  |  |         Padding          |  |  |
+|  |  |  +--------------------+  |  |  |
+|  |  |  |      Content       |  |  |  |
+|  |  |  +--------------------+  |  |  |
+|  |  +--------------------------+  |  |
+|  +--------------------------------+  |
++--------------------------------------+
+
+i. Content:The content is the actual data inside an element.
+ii. Padding:Padding is the space inside the element, between the content and the border.
+iii. Border:The border surrounds the padding and content
+iv. Margin:Margin is the space outside the border.It creates distance between one element and another.
+
+
+
+3.What is the difference between a CSS class and an id? When should you use one over the other?
+| **Class (`.`)**                      | **ID (`#`)**                       |
+| ------------------------------------ | ---------------------------------- |
+| Used for multiple elements           | Used for one unique element        |
+| Starts with `.`                      | Starts with `#`                    |
+| Can be reused many times             | Should only be used once per page  |
+| An element can have multiple classes | An element should have only one ID |
+| Lower CSS specificity                | Higher CSS specificity             |
+I use classes for reusable styling and IDs for unique elements or when I need to target a specific element with CSS or JavaScript.
+
+4.What is Flexbox, and what's the difference between justify-content and align-items?
+=Flexbox (Flexible Box Layout) is a CSS layout system used to arrange and align elements in a row or column. It makes it easy to create responsive layouts and control the spacing and alignment of items.
+To use Flexbox, set the parent element's display property to flex.
+.container{
+    display: flex;
+}
+Default (flex-direction: row)
+           Main Axis →
++-----------------------------------+
+| Item 1  Item 2  Item 3            |
+|                                   |
+|                                   |
++-----------------------------------+
+            ↑
+        Cross Axis
+
+
+| `justify-content`                     | `align-items`                          |
+| ------------------------------------- | -------------------------------------- |
+| Aligns items on the **main axis**     | Aligns items on the **cross axis**     |
+| Default (`row`): Horizontal alignment | Default (`row`): Vertical alignment    |
+| Controls spacing between items        | Controls vertical positioning of items |
+| Examples: `center`, `space-between`   | Examples: `center`, `stretch`          |
+
+↔️ justify-content → Moves items left and right (with the default row direction).
+↕️ align-items → Moves items up and down (with the default row direction).
+
+5.What is the difference between position: relative, absolute, and fixed in CSS?
+=relative=relative with to it's normal position and if it move it's normal position stay empty
+ absolute=relative with to it's first parent position and if it move it's normal position is block by other value or box
+ fix=position relative with browser window.
