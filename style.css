@@ -234,32 +234,6 @@
 }
 /* secure section end  */
 
-/* footer section start  */
-.footer-root{
-    background-color: #0D1B2A;
-}
-.footer-parent{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    color: #888888;
-}
-.footer-right{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-.footer-left-down{
-    display: flex;
-    justify-content: space-evenly;
-    /* align-items: center; */
-}
-.footer-left-down img{
-    color: white;
-}
-/* footer section end  */
 
 /*faq section start */
 .faq-section{
@@ -312,3 +286,64 @@
     font-size: 16px;
 }
     /*faq section end */
+/* footer section start  */
+
+.footer-root{
+    background-color: #0D1B2A;
+    padding: 20px 0;
+}
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.footer-section p {
+    font-size: 12px;
+    color:#888888;
+}
+.footer-right{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .footer-root{
+    background-color: #0D1B2A;
+}
+.footer-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: #888888;
+}
+.footer-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.footer-left-down{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; 
+}
+.footer-left-down img{
+    color: white;
+} 
+ footer section end  */
